@@ -1,0 +1,15 @@
+// Commons
+@import '../../styles/desktop';
+
+// Components
+@import '../../pages/main/Footer/desktop';
+@import '../../components/HubCard/desktop';
+@import '../../components/HubButton/desktop';
+@import '../../components/StickyButton/desktop';
+@import '../../components/QRcard/desktop';
+
+.mp-home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

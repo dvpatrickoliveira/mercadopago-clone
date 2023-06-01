@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: em(1) solid $andes-gray-070;
+    position: relative;
+    color: $andes-gray-550;
+    flex-direction: column;
+  
+    &__content-container {
+      font-size: em(10);
+      line-height: math.div(16, 10);
+      margin: 0 auto;
+      padding: $andes-spacing-24 0;
+      font-style: normal;
+      display: grid;
+    }
+  
+    &__content-legal-disclaimer {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      width: 90%;
+    }
+  
+    &__content {
+      margin: 0;
+    }
+  
+    &__regret-policy {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__text {
+      line-height: math.div(14, 10);
+    }
+  
+    &__pnfc {
+      &-wrapper {
+        display: flex;
+      }
+  
+      &-image-link {
+        width: em(129, 10);
+      }
+  
+      &-link-image {
+        width: 100%;
+      }
+    }
+  }
+  

@@ -1,0 +1,79 @@
+// sass-lint:disable no-duplicate-properties
+@import './variables';
+
+@mixin image-set-hero($site-id, $image-name, $extension) {
+  background-image: url('../../../assets/images/#{$site-id}/hero/#{$image-name}@1x.#{$extension}');
+  // sass-lint:disable-block indentation
+  background-image: image-set(
+    url('../../../assets/images/#{$site-id}/hero/#{$image-name}@1x.#{$extension}')
+      1x,
+    url('../../../assets/images/#{$site-id}/hero/#{$image-name}@2x.#{$extension}')
+      2x
+  );
+}
+
+@mixin backgrounds-set-hero($site-id, $image-name) {
+  .webp {
+    .hero {
+      &__background {
+        @include image-set-hero(#{$site-id}, #{$image-name}, 'webp');
+      }
+    }
+  }
+
+  .no-webp {
+    .hero {
+      &__background {
+        @include image-set-hero(#{$site-id}, #{$image-name}, 'jpg');
+      }
+    }
+  }
+}
+
+@mixin desktop-1920 {
+  @media screen and (min-width: $desktop-1920) {
+    @content;
+  }
+}
+
+@mixin desktop-1680 {
+  @media screen and (min-width: $desktop-1680) {
+    @content;
+  }
+}
+
+@mixin desktop-1366 {
+  @media screen and (min-width: $desktop-1366) {
+    @content;
+  }
+}
+
+@mixin desktop-1280 {
+  @media screen and (min-width: $desktop-1280) {
+    @content;
+  }
+}
+
+@mixin desktop-1024 {
+  @media screen and (min-width: $desktop-1024) {
+    @content;
+  }
+}
+
+@mixin tablet-768 {
+  @media screen and (min-width: $tablet-768) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin mobile-480 {
+  @media screen and (min-width: $mobile-480) {
+    @content;
+  }
+}
+
+@mixin mobile-360 {
+  @media screen and (min-width: $mobile-360) {
+    @content;
+  }
+}

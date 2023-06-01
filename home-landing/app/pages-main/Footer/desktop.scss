@@ -1,0 +1,71 @@
+@import 'shared';
+
+.footer {
+  &__content-container {
+    max-width: em(688, 10);
+    grid-auto-flow: column;
+  }
+
+  &__separator {
+    border-left: em(1) solid $andes-gray-070;
+    margin: 0 $andes-spacing-12;
+  }
+
+  &__regret-policy {
+    align-items: flex-start;
+    max-width: em(172, 10);
+  }
+
+  &__pnfc {
+    &-wrapper {
+      max-width: em(148, 10);
+      flex-direction: column;
+    }
+
+    &-text-link {
+      margin-bottom: $andes-spacing-12;
+      margin-top: $andes-spacing-12;
+    }
+  }
+}
+
+@include desktop-1024 {
+  .footer {
+    &__content-container {
+      max-width: em(864, 10);
+    }
+
+    &__separator {
+      margin: 0 $andes-spacing-20;
+    }
+
+    &__regret-policy {
+      max-width: em(180, 10);
+    }
+
+    &__pnfc {
+      &-wrapper {
+        max-width: em(232, 10);
+        flex-direction: row;
+      }
+
+      &-text-link {
+        max-width: em(91, 10);
+        margin-bottom: unset;
+        margin-right: $andes-spacing-12;
+      }
+    }
+  }
+}
+
+@include desktop-1280 {
+  .footer {
+    &__content-container {
+      max-width: em(1040, 10);
+    }
+
+    &__regret-policy {
+      max-width: em(269, 10);
+    }
+  }
+}

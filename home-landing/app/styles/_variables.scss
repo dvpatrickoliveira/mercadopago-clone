@@ -1,0 +1,31 @@
+// sass-lint:disable max-line-length
+// Custom vars
+$font-weight-extra-bold: 800;
+$title-color: $andes-gray-900;
+
+$hub-card-button-focus: rgba(27, 135, 201, 0.3);
+
+$andes-gray-900: rgba(0, 0, 0, 0.9);
+$andes-gray-550: rgba(0, 0, 0, 0.55);
+$andes-gray-060: rgba(0, 0, 0, 0.06);
+$andes-black-333: #333;
+
+$custom-box-shadow: rgba(0, 158, 227, 0.04);
+$hubs-desktop-1366-top-margin: -206px;
+$hubs-desktop-1024-top-margin: -182px;
+
+$font-size-10: 10px;
+
+// Media queries
+$desktop-1920: 1920px;
+$desktop-1680: 1680px;
+$desktop-1366: 1366px;
+$desktop-1280: 1280px;
+$desktop-1024: 1024px;
+$tablet-768: 768px;
+$mobile-480: 480px;
+$mobile-360: 360px;
+
+$custom-spacing-15: 15px;
+
+$dots-img: 'data:image/svg+xml,%3Csvg width="8" height="8" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23FFF" d="M0 0h2v2H0z" fill-rule="evenodd"/%3E%3C/svg%3E';
